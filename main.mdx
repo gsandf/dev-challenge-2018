@@ -1,0 +1,88 @@
+import { Appear, Head, Image, Notes } from 'mdx-deck';
+import { FullScreenCode, Invert, Split, SplitRight } from 'mdx-deck/layouts';
+import { hack as theme } from 'mdx-deck/themes';
+
+import Audio from './components/Audio';
+
+<!-- Blank starting slide -->
+
+<!-- Global components -->
+
+export { theme };
+
+<Head>
+  <title>Dev Team Challenge - Christmas 2018</title>
+</Head>
+
+<Audio
+  /* TODO: Enable audio for slides */
+  activeSlides={[]}
+  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/380953541&auto_play=true&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=false"
+/>
+
+---
+
+# Dev Challenge 2018
+
+```js
+console.log('Let the games begin');
+```
+
+---
+
+## team captains
+
+- Christian St. Clair
+- Josh Kincheloe
+- Justyn Hunter
+- Stephanie Winn
+
+---
+
+## teams
+
+[Christian]: Chelsea, Garry, Meyer, Zack
+
+[Josh K.]: Cole, Josh C., Steven, Swann
+
+[Justyn]: Carrie, Gabrielle, Seth, Wild Bill
+
+[Stephanie]: Clark, Scott, Zanchi
+
+---
+
+## rules
+
+- only team captains can answer
+- cheating is encouranged; don't get caught
+
+---
+
+# trivia
+
+URL & code to join will be created shortly
+
+---
+
+# decrypt
+
+- Team leads are being sent encrypted file
+- First to follow directions in file is the winner
+- You'll want your audio on
+
+---
+
+## decrypt
+
+- The instruction file is encrypted using AES-256 (CBC) & encoded using Base64
+- Password is all lowercase with no spaces
+
+---
+
+## decrypt - get the password
+
+- Go to the page where GS&F lists clients worked with & run this: `https://git.io/fpjYL`
+- We have a customer that sells Bluetooth-controlled lighting. What's the first two letters of their name?
+- On the web page where A. O. Smith helps you choose a water heater, what is the title's (in green) 7th word?
+- A certain customer sells a product that shares a name with me. What are the 1st, 2nd, and 7th letters in the company name?
+- `lp-frontend/src/App.js:327:28-31`
