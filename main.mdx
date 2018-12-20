@@ -2,7 +2,7 @@ import { Appear, Head, Image, Notes } from 'mdx-deck';
 import { FullScreenCode, Invert, Split, SplitRight } from 'mdx-deck/layouts';
 import { hack as theme } from 'mdx-deck/themes';
 
-import Audio from './components/Audio';
+import SoundCloudTrack from './components/SoundCloudTrack';
 
 <!-- Blank starting slide -->
 
@@ -14,11 +14,11 @@ export { theme };
   <title>Dev Team Challenge - Christmas 2018</title>
 </Head>
 
-<Audio
-  /* TODO: Enable audio for slides */
-  activeSlides={[]}
-  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/380953541&auto_play=true&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=false"
-/>
+<SoundCloudTrack activeSlides={[1, 2, 3, 4]} trackID="380953541" />
+<SoundCloudTrack activeSlides={[5, 6]} trackID="252169001" />
+<SoundCloudTrack activeSlides={[7, 8, 9, 10]} trackID="358571945" />
+<SoundCloudTrack activeSlides={[11, 12, 13]} trackID="165149696" />
+<SoundCloudTrack activeSlides={[14, 15]} trackID="182110820" />
 
 ---
 
@@ -60,11 +60,21 @@ console.log('Let the games begin');
 
 # trivia
 
-URL & code to join will be created shortly
+---
+
+## trivia
+
+Go to [kahoot.it](https://kahoot.it/)
+
+<small>(A code to join the game will be created shortly)</small>
 
 ---
 
 # decrypt
+
+---
+
+## decrypt
 
 - Team leads are being sent encrypted file
 - First to follow directions in file is the winner
@@ -86,3 +96,39 @@ URL & code to join will be created shortly
 - On the web page where A. O. Smith helps you choose a water heater, what is the title's (in green) 7th word?
 - A certain customer sells a product that shares a name with me. What are the 1st, 2nd, and 7th letters in the company name?
 - `lp-frontend/src/App.js:327:28-31`
+
+---
+
+# code runner
+
+---
+
+## code runner
+
+Your team needs a single _Typer_
+
+Everyone else is a _Runner_
+
+---
+
+## code runner
+
+- A piece of paper with a webpage is outside the room
+- Only one person may be a Typer (allowed to swap at most once)
+- Only one person per team may be out of the room at once
+- The same person may not leave the room twice in a row
+
+---
+
+# talking machine
+
+---
+
+## talking machine
+
+Create _something_ that detects what you say, displays what you said as text,
+and speaks what you said back to you
+
+---
+
+# Have an awesome break!

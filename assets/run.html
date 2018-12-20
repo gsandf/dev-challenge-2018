@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Run!</title>
+  </head>
+
+  <body id="display" style="font-size: 32px; line-height: 0.6;"></body>
+
+  <script>
+    (move = e =>
+      currentPiece &&
+      ((h = 0),
+      (nextState = [...currentState]),
+      (nextPiece = currentPiece.map(
+        (v, i) => (
+          (E = ~i % 2),
+          (x = eval(e[0])),
+          E
+            ? 0
+            : (nextState[
+                ((h |=
+                  (x < 0) | (x > 9) | ((nextState[y] >> x) & 1) | (y > 17)),
+                y)
+              ] |= 1 << x),
+          (y = x)
+        )
+      )),
+      h)),
+      (nextState = C = Array(9)),
+      (onkeydown = _ = s => (
+        s
+          ? ((keycode = s.which - 38) % 2) - keycode ||
+            (move`
+              keycode
+              ? v- !E * keycode
+              : currentPiece[2] - (currentPiece[i^1] - currentPiece[3]) * (E | 1)
+            ` &&
+              move`v`)
+          : isOver ||
+            ((currentPiece = currentPiece || [
+              ...'02121303040506161715'.substr(
+                (new Date() % 7) * 2,
+                8,
+                (currentState = [...C, ...nextState]
+                  .filter(v => v ^ 1023 || !(score += s += 100))
+                  .slice(-18))
+              )
+            ]),
+            move`v-E` ? (keycode = nextPiece &= isOver = move`v`) : 0,
+            setTimeout(_, keycode - 2 ? 200 : 20, 0)),
+        (currentPiece = nextPiece),
+        (score |= nextState.map(v => {
+          score += '\n';
+          for (x = 10; x--; )
+            display.innerText = score += '_#'[
+              isOver ^ (v ^ (1023 + currentPiece) && (v >> x) & 1)
+            ];
+        }))
+      ))((score = currentPiece = keycode = isOver = 0));
+  </script>
+</html>
