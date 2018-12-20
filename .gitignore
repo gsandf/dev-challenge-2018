@@ -1,6 +1,7 @@
 *.log
 .DS_Store
 .idea
+dist
 node_modules
 package-lock.json
 yarn.lock
