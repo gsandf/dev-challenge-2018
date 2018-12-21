@@ -1,5 +1,7 @@
 # [Dev Challenge 2018](https://dev-challenge-2018.now.sh)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/gsandf/dev-challenge-2018.svg)](https://greenkeeper.io/)
+
 > A mysterious and fierce gathering you have to live through to truly know and understand. Will you bring glory to your team or just show up for some food?
 
 ## Setup
